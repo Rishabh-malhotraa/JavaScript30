@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Say IT!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2060f788b7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+    <div class=fav>Fork me on Github
+        <div><a href="https://github.com/Rishgod/JavaScript30" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-github fa-fw fa-2x"></i>
+            </a>
+
+        </div>
+    </div>
+    <form onsubmit="return false">
+        <div class="form-item">
+            <label>Username</label>
+            <div class="input-wrapper">
+                <input type="text" id="username" autocomplete="off" spellcheck="false" placeholder="Day 2: 02-01-20">
+            </div>
+        </div>
+        <div class="form-item">
+            <label>Password </label>
+            <div class="input-wrapper">
+                <input type="password" id="password" spellcheck="false" autocomplete="off" placeholder="">
+
+                <button type="button" id="eyeball" alt="Click Me">
+                    <div class="eye"></div>
+                </button>
+                <div id="beam"></div>
+
+            </div>
+        </div>
+        <button id="submit">Sign in</button>
+    </form>
+    <script src="./app.js"></script>
+</body>
+
+</html>

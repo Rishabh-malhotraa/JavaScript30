@@ -1,0 +1,105 @@
+$spotify-green: #1ED760;
+$animation-duration: 4s;
+$dash-length-circle: 90;
+$dash-length-letters: 600;
+
+@keyframes scale-to-full {
+	0%,
+  1% {
+    transform: scale(0);
+	}
+	70%,
+  100% {
+    transform: scale(1);
+	}
+}
+
+@keyframes show-bars {
+  0%,
+	30% {
+		opacity: 0;
+    transform: scaley(0.78);
+	}
+	70%,
+  92.8% {
+		opacity: 1;
+    transform: scaley(1);
+	}
+  93%,
+  100% {
+		opacity: 0;
+    transform: scaley(0.78);
+	}
+}
+
+@keyframes dash {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 1px;
+  }
+  37% {
+    fill-opacity: 0;
+  }
+  50% {
+    stroke-width: 1px;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+  }
+}
+
+
+#wrapper {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  
+  svg {
+    height: 80vh;
+    max-width: 90vw;
+    width: auto;
+  }
+}
+
+#logo--circle {
+  animation: dash $animation-duration infinite, scale-to-full $animation-duration infinite;
+  fill: $spotify-green;
+  stroke: $spotify-green;
+  stroke-dasharray: $dash-length-circle;
+  stroke-dashoffset: $dash-length-circle;
+  transform-origin: 84px 50%;
+  transition: fill-opacity 0.3s ease, transform 0.1s ease;
+
+  .logo--circle--bar {
+    animation: show-bars $animation-duration infinite;
+    fill: white;
+    opacity: 0;
+    transform: scaley(0.78);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  #logo--circle--bar-1 {
+    animation-delay: 0.25s;
+  }
+
+  #logo--circle--bar-2 {
+    animation-delay: 0.7s;
+  }
+
+  #logo--circle--bar-3 {
+    animation-delay: 1s;
+  }
+}
+
+#logo--name path {
+  animation: dash $animation-duration infinite;
+  fill: $spotify-green;
+  stroke: $spotify-green;
+  stroke-dasharray: $dash-length-letters;
+  stroke-dashoffset: $dash-length-letters;
+  transition: fill-opacity 0.3s ease;
+}

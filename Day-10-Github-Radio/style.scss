@@ -1,0 +1,148 @@
+:root {
+  --green-darker: #196127;
+  --green-dark: #239A3B;
+  --green-regular: #7BC96F;
+  --green-light: #C6E48B;
+  --green-lighter: #E9F7CE;
+  --grey: #EBEDF0;
+  --time: 2s;
+}
+
+.quote {
+  width: 100vw;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+.fab {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: #196127;
+}
+
+.day10 {
+  top: 5px;
+  margin-left: 5px;
+  font: san-serif;
+  line-height: 1.5em;
+  position: absolute;
+  letter-spacing: 5px;
+  margin-left: 5px;
+}
+
+.bg-gray {
+  background-color: var(--grey)
+}
+
+.square-1 {
+  animation: square-1 var(--time) infinite alternate forwards
+}
+
+.square-2 {
+  animation: square-2 var(--time) infinite alternate forwards
+}
+
+.square-3 {
+  animation: square-3 var(--time) infinite alternate forwards
+}
+
+.square-4 {
+  animation: square-4 var(--time) infinite alternate forwards
+}
+
+.square-5 {
+  animation: square-5 var(--time) infinite alternate forwards
+}
+
+@keyframes square-1 {
+  0% {
+    background-color: var(--grey)
+  }
+
+  49% {
+    background-color: var(--grey)
+  }
+
+  50% {
+    background-color: var(--green-darker)
+  }
+
+  100% {
+    background-color: var(--green-darker)
+  }
+}
+
+@keyframes square-2 {
+  0% {
+    background-color: var(--grey)
+  }
+
+  74% {
+    background-color: var(--grey)
+  }
+
+  75% {
+    background-color: var(--green-dark)
+  }
+
+  100% {
+    background-color: var(--green-dark)
+  }
+}
+
+@keyframes square-3 {
+  0% {
+    background-color: var(--grey)
+  }
+
+  87.4% {
+    background-color: var(--grey)
+  }
+
+  87.5% {
+    background-color: var(--green-regular)
+  }
+
+  100% {
+    background-color: var(--green-regular)
+  }
+}
+
+@keyframes square-4 {
+  0% {
+    background-color: var(--grey)
+  }
+
+  93.74% {
+    background-color: var(--grey)
+  }
+
+  93.75% {
+    background-color: var(--green-light)
+  }
+
+  100% {
+    background-color: var(--green-light)
+  }
+}
+
+@keyframes square-5 {
+  0% {
+    background-color: var(--grey)
+  }
+
+  96.81% {
+    background-color: var(--grey)
+  }
+
+  96.82% {
+    background-color: var(--green-lighter)
+  }
+
+  100% {
+    background-color: var(--green-lighter)
+  }
+}

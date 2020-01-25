@@ -1,0 +1,55 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 360px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* font-family: consolas;*/
+}
+
+.fab {
+    position: absolute;
+    right: 6px;
+    top: 25px;
+    color: black;
+}
+
+.colorBtn {
+    font-family: "Roboto";
+    padding: 1em 1em;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    border: 3px solid grey;
+    border-radius: 120px;
+    color: #fefefe;
+    background-color: #2196F3;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+
+    /*overflow: hidden;*/
+}
+
+button .ripple {
+    border-radius: 50%;
+    background-color: rgba(225, 225, 225, 0.7);
+    position: absolute;
+    transform: scale(0);
+    animation: ripple 0.8s linear;
+
+
+}
+
+@keyframes ripple {
+
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}

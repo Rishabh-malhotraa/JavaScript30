@@ -1,0 +1,72 @@
+* .navbar-custom {
+    background-color: #ffee25 !important;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    overflow: auto;
+}
+
+.navchange {
+
+    color: #606060FF !important;
+    letter-spacing: 4px;
+}
+
+
+
+.fab {
+    color: #606060FF !important;
+}
+
+.fork {
+    align-items: center;
+    display: flex;
+    letter-spacing: 3px;
+    color: #606060FF !important;
+
+
+}
+
+/*Giphy-Giphy Starts here*/
+
+section {
+    background-color: #f4f6f6;
+}
+
+p {
+    font-size: 13px;
+    line-height: 10px;
+
+
+
+
+
+
+    background: url(https://media.giphy.com/media/Z9ybagavXlLp9nMwiM/giphy.gif) no-repeat;
+    /* background: url(https://media.giphy.com/media/3ohhweaLAqjug5wuxW/giphy.gif) no-repeat; */
+    /* background: url(https://media.giphy.com/media/9JwUllESi734b1vFRa/giphy.gif) no-repeat; */
+    /* background: url(https://media.giphy.com/media/26ufoPSrPt8MnUiv6/giphy.gif) no-repeat; */
+    /* background: url(https://media.giphy.com/media/41x8G9RQjdKSKbO7it/giphy.webp) no-repeat; */
+    /* background: url(https://media.giphy.com/media/3o7WIqOWdQFV7ffody/giphy.gif) no-repeat; */
+    /* background: url(https://media.giphy.com/media/9LXQ4bZVhYGB7dYuGU/giphy.gif) no-repeat; */
+    /* background: url(https://media.giphy.com/media/fWfDkZ2cUyqp3ddMzY/giphy.gif) no-repeat; */
+    /* background: url(https://media.giphy.com/media/2xPJbjDMsmxjdmzZ6f/giphy.gif) no-repeat; */
+    /* background: url(https://media.giphy.com/media/l378sVNcNviH8qnhS/giphy.gif) no-repeat; */
+    /* background: url(https://media.giphy.com/media/2FidpMMcJcMuc/giphy.gif) no-repeat; */
+
+
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* https://css-tricks.com/how-to-do-knockout-text/ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-weight: 900;
+    margin: 0;
+    mix-blend-mode: darken;
+}

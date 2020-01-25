@@ -1,0 +1,100 @@
+ * {
+     margin: 0px;
+ }
+
+ html,
+ body {
+     height: 100%;
+     margin: 0px;
+     overflow: hidden;
+     font-family: "Varela",
+         sans-serif;
+ }
+
+ .fab {
+     color: blanchedalmond;
+ }
+
+ .xyz {
+     color: whitesmoke;
+     background-color: black;
+     position: absolute;
+     width: 100%;
+ }
+
+ .a {
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #000000;
+
+ }
+
+ .b {
+
+
+     text-align: center;
+     font-size: 50px;
+ }
+
+
+
+ .glitch {
+     color: white;
+     font-size: 100px;
+     letter-spacing: 5px;
+     position: relative;
+     width: 400px;
+     margin: 0 auto;
+ }
+
+ @keyframes noise-anim {
+     $steps: 20;
+
+     @for $i from 0 through $steps {
+         #{percentage($i*(1/$steps))} {
+             $top: random(100);
+             $bottom: random(101 - $top);
+             clip-path: inset(#{$top}% 0 #{$bottom}% 0);
+         }
+     }
+ }
+
+ .glitch::after {
+     letter-spacing: 5px;
+     content: attr(data-text);
+     position: absolute;
+     left: 2px;
+     text-shadow: 3px 0 #0ffbf9;
+     top: 0;
+     color: white;
+     background: #000000;
+     overflow: hidden;
+     animation: noise-anim 2s infinite linear alternate-reverse;
+ }
+
+ @keyframes noise-anim-2 {
+     $steps: 20;
+
+     @for $i from 0 through $steps {
+         #{percentage($i*(1/$steps))} {
+             $top: random(100);
+             $bottom: random(101 - $top);
+             clip-path: inset(#{$top}% 0 #{$bottom}% 0);
+         }
+     }
+ }
+
+ .glitch::before {
+     letter-spacing: 5px;
+     content: attr(data-text);
+     position: absolute;
+     left: -2px;
+     text-shadow: -3px 0 #cc0f39;
+     top: 0;
+     color: white;
+     background: #000000;
+     overflow: hidden;
+     animation: noise-anim-2 15s infinite linear alternate-reverse;
+ }

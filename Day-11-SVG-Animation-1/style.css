@@ -1,0 +1,91 @@
+@keyframes scale-to-full {
+  0%,
+  1% {
+    transform: scale(0);
+  }
+  70%,
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes show-bars {
+  0%,
+	30% {
+    opacity: 0;
+    transform: scaley(0.78);
+  }
+  70%,
+  92.8% {
+    opacity: 1;
+    transform: scaley(1);
+  }
+  93%,
+  100% {
+    opacity: 0;
+    transform: scaley(0.78);
+  }
+}
+@keyframes dash {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 1px;
+  }
+  37% {
+    fill-opacity: 0;
+  }
+  50% {
+    stroke-width: 1px;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+  }
+}
+#wrapper {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+#wrapper svg {
+  height: 80vh;
+  max-width: 90vw;
+  width: auto;
+}
+
+#logo--circle {
+  animation: dash 4s infinite, scale-to-full 4s infinite;
+  fill: #1ED760;
+  stroke: #1ED760;
+  stroke-dasharray: 90;
+  stroke-dashoffset: 90;
+  transform-origin: 84px 50%;
+  transition: fill-opacity 0.3s ease, transform 0.1s ease;
+}
+#logo--circle .logo--circle--bar {
+  animation: show-bars 4s infinite;
+  fill: white;
+  opacity: 0;
+  transform: scaley(0.78);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+#logo--circle #logo--circle--bar-1 {
+  animation-delay: 0.25s;
+}
+#logo--circle #logo--circle--bar-2 {
+  animation-delay: 0.7s;
+}
+#logo--circle #logo--circle--bar-3 {
+  animation-delay: 1s;
+}
+
+#logo--name path {
+  animation: dash 4s infinite;
+  fill: #1ED760;
+  stroke: #1ED760;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  transition: fill-opacity 0.3s ease;
+}
