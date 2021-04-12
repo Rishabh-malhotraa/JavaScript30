@@ -1,7 +1,6 @@
 # JavaScript30
 
-Inspired by Wes Bos, I'll try to learn something new everyday for one 30 days.
-<a target="_blank" href="https://rishgod.github.io/JavaScript30/Day-6-Parallax/index"/>CLICK ME</a>
+Inspired by Wes Bos, I'll try to learn something new everyday for one 30 days. <a target="_blank" href="https://rishabh-malhotraa.github.io/JavaScript30/">CLICK ME</a>
 | Project-Name      | LINK                                                                                                                    |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | 1. Giphy-Giphy    | <a target="_blank" href="https://rishabh-malhotraa.github.io/JavaScript30/Day-1-Giphy-Giphy/index">Click Here </a>      |
